@@ -23,7 +23,7 @@ jobs:
 - job: windows
   displayName: Windows
   pool:
-    name: Azure Pipelines
+    name: 1
     vmImage: windows-2019
   timeoutInMinutes: 10
   variables:
@@ -58,7 +58,7 @@ jobs:
 - job: linux
   displayName: Linux
   pool:
-    name: Azure Pipelines
+    name: 1
     vmImage: ubuntu-latest
   container:
     image: registry.gitlab.steamos.cloud/steamrt/scout/sdk:latest
@@ -101,7 +101,7 @@ jobs:
 - job: publish
   displayName: Publish to GitHub Releases
   pool:
-    name: Azure Pipelines
+    name: 1
     vmImage: ubuntu-latest
   timeoutInMinutes: 5
   dependsOn:
