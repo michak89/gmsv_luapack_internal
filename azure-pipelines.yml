@@ -114,10 +114,10 @@ jobs:
     inputs:
       downloadType: specific
       parallelizationLimit: 12
-  - task: GitHubRelease@1
-    displayName: 'Publish GitHub release $(build.sourceBranchName)'
-    inputs:
-      gitHubConnection: 'GitHub michak89'
-      releaseNotesSource: inline
-      assets: '$(System.ArtifactsDirectory)/**'
-      addChangeLog: false
+#  - task: GitHubRelease@1
+#    displayName: 'Publish GitHub release $(build.sourceBranchName)'
+#    inputs:
+#      gitHubConnection: 'GitHub michak89'
+#      releaseNotesSource: inline
+#      assets: '$(System.ArtifactsDirectory)/**'
+#      addChangeLog: false
