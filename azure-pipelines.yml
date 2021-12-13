@@ -113,7 +113,7 @@ jobs:
     displayName: 'Download build artifacts'
     inputs:
       downloadType: specific
-      parallelizationLimit: 12
+      parallelizationLimit: 1
 #  - task: GitHubRelease@1
 #    displayName: 'Publish GitHub release $(build.sourceBranchName)'
 #    inputs:
